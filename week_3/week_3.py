@@ -1,4 +1,4 @@
-'''
+#code 1
 def factors(n):
     list = []
     for i in range(1, n + 1):
@@ -7,9 +7,8 @@ def factors(n):
     return list
 a = factors(46)
 print(a)
-'''
 
-'''
+#code 2
 def findpos(l,v):
     # Return first position of v in l
     # Return -1 if v not in l
@@ -19,10 +18,9 @@ def findpos(l,v):
             (found,pos) = (True,i)
     if not found:
         pos = -1
-    return(pos)
-'''
+    return (pos)
 
-'''
+#code 3
 def findpos(l, v):
     (pos, i) = (-1, 0)
     for x in l:
@@ -34,9 +32,8 @@ def findpos(l, v):
     return pos
 
 print(findpos([2, 3, 4, 56, 7, 90], 90))
-'''
 
-'''
+#code 4
 def findpos(l, v):
     pos = -1
     for i in range(len(l)):
@@ -46,9 +43,8 @@ def findpos(l, v):
     return pos
 a = findpos([1, 2], 2)
 print(a)
-'''
 
-'''
+#code 5
 def findpos(l, v):
     pos = -1
     for i in range(len(l)):
@@ -61,9 +57,8 @@ def findpos(l, v):
     return pos
 a = findpos([1, 2], 2)
 print(a)
-'''
 
-'''
+#code 6
 def search(seq, v):
     for x in seq:
         if x == v:
@@ -72,9 +67,8 @@ def search(seq, v):
 
 a = search((4, 5, 6, 7), 6)
 print(a)
-'''
 
-'''
+#code 7
 def bsearch(seq, v, l, r):
     # search for v in seq[l:r], seq is sorted 
     if r - l == 0:
@@ -88,9 +82,8 @@ def bsearch(seq, v, l, r):
         return bsearch(seq, v, l, mid)
     else:
         return bsearch(seq, v, mid + 1, r)
-'''
 
-'''
+#code 8
 def selectionSort(l):
     for start in range(len(l)):
         min_pos = start
@@ -99,9 +92,8 @@ def selectionSort(l):
                 min_pos = i
 
         (l[start], l[min_pos]) = (l[min_pos], l[start])
-'''
 
-'''
+#code 9
 def insertSort(seq):
     for sliceEnd in range(len(seq)):
         # Build longer and longer sorted slices
@@ -113,9 +105,8 @@ def insertSort(seq):
         while pos > 0 and seq[pos] < seq[pos - 1]:
             (seq[pos], seq[pos - 1]) = (seq[pos -1], seq[pos])
             pos = pos - 1
-'''
 
-'''
+#code 10
 def factorial(n):
     if n == 0:
         return 1
@@ -124,9 +115,8 @@ def factorial(n):
 
 a = factorial(5)
 print(a)
-'''
 
-'''
+#code 11
 def multiply(m, n):
     if n == 1:
         return m
@@ -135,9 +125,8 @@ def multiply(m, n):
 
 b = multiply(5, 10)
 print(b)
-'''
 
-'''
+#code 11
 def length(l):
     if l == []:
         return 0
@@ -146,9 +135,8 @@ def length(l):
 
 l = length([1, 2, 3])
 print(l)
-'''
 
-'''
+#code 12
 def InsertionSort(seq):
     isort(seq,len(seq))
 def isort(seq,k): # Sort slice seq[0:k]
@@ -160,7 +148,7 @@ def insert(seq,k): # Insert seq[k] into sorted seq[0:k-1]
     while pos > 0 and seq[pos] < seq[pos-1]:
         (seq[pos],seq[pos-1]) = (seq[pos-1],seq[pos])
         pos = pos-1
-'''
+
 
 
 
