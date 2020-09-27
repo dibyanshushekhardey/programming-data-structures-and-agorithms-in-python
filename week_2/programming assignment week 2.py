@@ -1,3 +1,5 @@
+# Programming assignment week 2
+
 # Prime number
 
 def primeproduct(m):
